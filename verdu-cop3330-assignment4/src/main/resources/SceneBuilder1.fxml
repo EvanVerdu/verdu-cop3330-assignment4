@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1190.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Assignment4">
+    <children>
+      <SplitPane dividerPositions="0.21196754563894524" layoutX="264.0" layoutY="139.0" prefHeight="679.0" prefWidth="919.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="204.0">
+               <children>
+                  <ListView layoutX="-14.0" prefHeight="677.0" prefWidth="191.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ScrollBar layoutX="177.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="687.0" prefWidth="14.0" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="177.0" AnchorPane.topAnchor="-2.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="632.0" prefWidth="762.0">
+               <children>
+                    <Button layoutX="400.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Add List" textFill="#3414d7" />
+                    <Button layoutX="400.0" layoutY="48.0" mnemonicParsing="false" text="Remove List" textFill="#1a02d0" />
+                  <TextArea layoutX="15.0" layoutY="557.0" prefHeight="106.0" prefWidth="690.0" text="(Selected List Title)&#10;(Selected Item Title)                      &#10;(Selected Item Due Date)&#10;(Selected Item Description)&#10;" />
+                  <TextField layoutX="215.0" layoutY="48.0" />
+                  <Text layoutX="31.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of List to remove:" wrappingWidth="132.87890625" />
+                  <Text layoutX="31.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of List to add:" wrappingWidth="132.87890625" />
+                  <TextField layoutX="215.0" layoutY="14.0" />
+                  <TextField layoutX="185.0" layoutY="117.0" />
+                  <TextField layoutX="23.0" layoutY="117.0" />
+                  <Text layoutX="23.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of list to add item to: " wrappingWidth="163.064453125" />
+                  <Text layoutX="193.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Description:" textAlignment="CENTER" wrappingWidth="132.87890625" />
+                  <Text layoutX="356.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date:" textAlignment="CENTER" wrappingWidth="132.87890625" />
+                  <TextField layoutX="348.0" layoutY="117.0" />
+                  <Button layoutX="628.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Add Item" textFill="#3010e4" />
+                  <Text layoutX="23.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of list to remove item from: " wrappingWidth="186.0" />
+                  <TextField layoutX="23.0" layoutY="174.0" prefHeight="25.0" prefWidth="180.0" />
+                  <Text layoutX="225.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Item to remove:" wrappingWidth="186.0" />
+                  <TextField layoutX="225.0" layoutY="174.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button layoutX="374.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Remove Item" textFill="#360cee" />
+                  <Text layoutX="23.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of list to edit item description:" wrappingWidth="219.0" />
+                  <TextField layoutX="23.0" layoutY="231.0" prefHeight="25.0" prefWidth="194.0" />
+                  <Text layoutX="237.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Item to edit:" wrappingWidth="132.87890625" />
+                  <TextField layoutX="237.0" layoutY="231.0" prefHeight="25.0" prefWidth="123.0" />
+                  <Text layoutX="391.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Description:" wrappingWidth="132.87890625" />
+                  <TextField layoutX="383.0" layoutY="231.0" prefHeight="25.0" prefWidth="114.0" />
+                  <Button layoutX="510.0" layoutY="231.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Edit Description" textFill="#360cee" />
+                  <Text layoutX="23.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of list to edit item Due Date:" wrappingWidth="219.0" />
+                  <TextField layoutX="23.0" layoutY="285.0" prefHeight="25.0" prefWidth="194.0" />
+                  <Text layoutX="237.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Item to edit:" wrappingWidth="132.87890625" />
+                  <TextField layoutX="237.0" layoutY="285.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField layoutX="392.0" layoutY="285.0" prefHeight="25.0" prefWidth="114.0" />
+                  <Text layoutX="404.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Due Date:" wrappingWidth="132.87890625" />
+                  <Button layoutX="524.0" layoutY="281.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Edit Due Date" textFill="#360cee" />
+                  <Text layoutX="23.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of list to mark item as complete:" wrappingWidth="219.0" />
+                  <TextField layoutX="25.0" layoutY="393.0" prefHeight="25.0" prefWidth="207.0" />
+                  <Text layoutX="282.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Item:" wrappingWidth="132.87890625" />
+                  <TextField layoutX="259.0" layoutY="393.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button layoutX="423.0" layoutY="393.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Mark Complete" textFill="#360cee" />
+                  <Button layoutX="237.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="All Items" textFill="#360cee" />
+                  <Button layoutX="559.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Completed Items" textFill="#360cee" />
+                  <Button layoutX="388.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Incompleted Items" textFill="#360cee" />
+                  <Text fill="#1c46dd" layoutX="17.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item List Filters:" wrappingWidth="207.0">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="46.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of List to export:" wrappingWidth="140.0" />
+                  <TextField layoutX="20.0" layoutY="488.0" prefHeight="25.0" prefWidth="170.0" />
+                  <Button layoutX="56.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Export List" textFill="#360cee" />
+                  <Text layoutX="216.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Path of List to import" wrappingWidth="219.0" />
+                  <Text layoutX="367.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Path of Many Lists to import:" wrappingWidth="180.0" />
+                  <TextField layoutX="209.0" layoutY="488.0" prefHeight="25.0" prefWidth="149.0" />
+                  <TextField layoutX="385.0" layoutY="488.0" prefHeight="25.0" prefWidth="140.0" />
+                  <Button layoutX="231.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Import List" textFill="#360cee" />
+                  <Button layoutX="402.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Import Lists" textFill="#360cee" />
+                  <Text layoutX="569.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Export all Lists:" wrappingWidth="114.0" />
+                  <Button layoutX="563.0" layoutY="519.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Export All Lists" textFill="#360cee" />
+                  <Text layoutX="493.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name:" textAlignment="CENTER" wrappingWidth="132.87890625" />
+                  <TextField layoutX="516.0" layoutY="117.0" prefHeight="25.0" prefWidth="87.0" />
+                  <Text layoutX="27.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title of list to edit:" wrappingWidth="98.0" />
+                  <TextField layoutX="23.0" layoutY="339.0" prefHeight="25.0" prefWidth="105.0" />
+                  <Button layoutX="296.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" text="Edit Title" textFill="#360cee" />
+                  <Text layoutX="178.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New title:" wrappingWidth="98.0" />
+                  <TextField layoutX="151.0" layoutY="339.0" prefHeight="25.0" prefWidth="105.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Text fill="#0d2fee" layoutX="295.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ToDo List Maker" textAlignment="CENTER" underline="true" wrappingWidth="646.13671875">
+         <font>
+            <Font size="68.0" />
+         </font>
+      </Text>
+      <Text fill="#1c46dd" layoutX="84.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todo Lists" wrappingWidth="163.064453125">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#1c46dd" layoutX="295.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items In List" wrappingWidth="163.064453125">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="36.0" layoutY="139.0" prefHeight="677.0" prefWidth="219.0">
+         <children>
+            <ListView prefHeight="677.0" prefWidth="219.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ScrollBar layoutX="205.0" orientation="VERTICAL" prefHeight="677.0" prefWidth="14.0" />
+         </children></AnchorPane>
+      <Sphere layoutX="971.0" layoutY="64.0" radius="50" />
+      <Sphere layoutX="247.0" layoutY="58.0" radius="50" />
+    </children>
+</Pane>

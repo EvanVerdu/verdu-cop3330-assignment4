@@ -1,0 +1,115 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Assignment4
+{
+public static void start (Intializes the application GUI)
+class Assignment4.Item
+}
+
+class IfButtonpress
+class CreateMainList
+
+Assignment4->IfButtonpress
+Assignment4->CreateMainList
+Assignment4->DisplayAllInformationTextArea
+
+
+class RemoveItem
+class AddItem
+
+
+class CreateMainlist
+class AddList
+class RemoveList
+
+
+class ExportSingleList
+class ImportSingleList
+class ImportMultipleLists
+class ExportAllLists
+
+
+class EditTitle
+class EditItemDescription
+class EditItemDueDate
+
+
+class CompleteItem
+class DisplayAll
+class DisplayIncomplete
+class DisplayComplete
+
+
+class DisplayLists
+class DisplayItems
+class DisplayAllInformationTextArea
+
+IfButtonpress->RemoveItem
+RemoveItem->DisplayLists
+RemoveItem->DisplayItems
+
+IfButtonpress->AddItem
+AddItem->DisplayLists
+AddItem->DisplayItems
+
+IfButtonpress->CreateMainlist
+CreateMainlist->DisplayLists
+CreateMainlist->DisplayItems
+
+IfButtonpress->AddList
+AddList->DisplayLists
+AddList->DisplayItems
+
+IfButtonpress->RemoveList
+RemoveList->DisplayLists
+RemoveList->DisplayItems
+
+IfButtonpress->ExportSingleList
+ExportSingleList->DisplayLists
+ExportSingleList->DisplayItems
+
+IfButtonpress->ImportSingleList
+ImportSingleList->DisplayLists
+ImportSingleList->DisplayItems
+
+IfButtonpress->ImportMultipleLists
+ImportMultipleLists->DisplayLists
+ImportMultipleLists->DisplayItems
+
+IfButtonpress->ExportAllLists
+ExportAllLists->DisplayLists
+ExportAllLists->DisplayItems
+
+IfButtonpress->EditTitle
+EditTitle->DisplayLists
+EditTitle->DisplayItems
+
+IfButtonpress->EditItemDescription
+EditItemDescription->DisplayLists
+EditItemDescription->DisplayItems
+
+IfButtonpress->EditItemDueDate
+EditItemDueDate->DisplayLists
+EditItemDueDate->DisplayItems
+
+IfButtonpress->CompleteItem
+CompleteItem->DisplayLists
+CompleteItem->DisplayItems
+
+IfButtonpress->DisplayAll
+DisplayAll->DisplayLists
+DisplayAll->DisplayItems
+
+IfButtonpress->DisplayIncomplete
+DisplayIncomplete->DisplayLists
+DisplayIncomplete->DisplayItems
+
+IfButtonpress->DisplayComplete
+DisplayComplete->DisplayLists
+DisplayComplete->DisplayItems
+
+
+
+
+@enduml
